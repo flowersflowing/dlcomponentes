@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div v-for="(item, index) in caracteres" :key="index">
-      <img :src="item.image" :alt="item.name"> {{item.name}}
+    <div v-for="(item, index) in caracteres" :key="index" class="pers">
+      <img :src="item.image" :alt="item.name"> <span>{{item.name}}</span>
     </div>
   </div>
 </template>
@@ -43,6 +43,10 @@ export default {
   img {
     height: 150px;
     border-radius: 50%;
-    margin: 20px 10px 20px 40px;
-  } 
+    margin: 20px 30px 20px 40px;
+  }
+  .pers {
+    display: flex;
+    align-items: center;
+  }
 </style>
