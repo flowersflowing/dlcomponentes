@@ -17,7 +17,10 @@ export default {
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Arial, sans-serif;
+  color: green;
+  font-size: 20px;
+  font-weight: 1000;
   background-image: url('https://rickandmortypod.com/wp-content/uploads/2018/11/cropped-RM_page-header_background1-3.png');
   height: 1000px;
 }

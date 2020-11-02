@@ -1,6 +1,8 @@
 <template>
   <div>
-    <p></p>
+    <div v-for="(item, index) in caracteres" :key="index">
+      <img :src="item.image" :alt="item.name"> {{item.name}}
+    </div>
   </div>
 </template>
 
@@ -9,7 +11,7 @@ export default {
   name: 'Personajes',
   data() {
     return {
-      personajes: [
+      caracteres: [
         {
           name: "Rick Sánchez",
           image: "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
@@ -38,4 +40,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  img {
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px 10px 20px 40px;
+  } 
 </style>
